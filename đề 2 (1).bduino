@@ -1,0 +1,1344 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="kf2{+uhF,5~%|j!DJbnU">kc_thang</variable>
+    <variable id="Y~vu)4{,u%GBVmm`~%zc">kc_lui</variable>
+    <variable id="J.|Usr~Qs+tV3/s,o|fm">goc</variable>
+    <variable id="y/S2]W(DS4ONKlI/#w`5">kc_line</variable>
+    <variable type="int" id="RfFr-tczsS#@?*CFB~,o">target</variable>
+    <variable type="int" id="_jvBO.TC45kRzj@{m:^7">speed</variable>
+    <variable type="int" id="sUbI(3tTJ#b[/h.bmz.A">line</variable>
+    <variable type="int" id="P#q{d%c`=B0*0FA2k)s9">distance</variable>
+  </variables>
+  <block type="procedures_defnoreturn" id="-WuUx.v+;E6u;BisPBGu" x="-1588" y="-2288">
+    <field name="NAME">cap trung hoa tim</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="procedures_callnoreturn" id="WBSM=zWS2rue~[-I;~XQ">
+        <mutation name="re_phai">
+          <arg name="goc"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_number" id=",ngKc$5S}Z5bAGQB21mB">
+            <field name="NUM">180</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="Zkn*21oIi%d*2Sdz(pU-">
+            <mutation name="di_thang">
+              <arg name="kc_thang"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="BJCOwCQUXe{~sJb.m),%">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+            <next>
+              <block type="LbGripper.moveTo" id="%^c:#KBn3/iH~v,/u{Tv">
+                <field name="UnitDegree">degrees</field>
+                <value name="angleDeg">
+                  <shadow type="math_number" id="G%;uzc2%}~}$e!A|ztJ|">
+                    <field name="NUM">60</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="procedures_callnoreturn" id="sr*-T:S-),-cKrD06-oj">
+                    <mutation name="di_lui">
+                      <arg name="kc_lui"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="math_number" id="BzU}*^BYFcUST^k.g%,=">
+                        <field name="NUM">-2</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="X3/0iG6*xFfI$ZCgv3BL">
+                        <mutation name="re_trai">
+                          <arg name="goc"></arg>
+                        </mutation>
+                        <value name="ARG0">
+                          <block type="math_number" id="c5V#@C0T^x;KcMM*rvAz">
+                            <field name="NUM">135</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="procedures_callnoreturn" id="phyCGr*,;MZ#j_p]=%Xl">
+                            <mutation name="do_line">
+                              <arg name="kc_line"></arg>
+                            </mutation>
+                            <value name="ARG0">
+                              <block type="math_number" id="l-:6rp+Vt#yY+aTEV%)w">
+                                <field name="NUM">600</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="procedures_callnoreturn" id="xltT#x`x}AtCiH@yYpph">
+                                <mutation name="re_trai">
+                                  <arg name="goc"></arg>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block type="math_number" id="6PNf7!s%NVI^dnK:`7F(">
+                                    <field name="NUM">45</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="tz1p;{s!~Y+VLjxL.?yY">
+                                    <mutation name="di_thang">
+                                      <arg name="kc_thang"></arg>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block type="math_number" id="4M8%*{,5ghM#@U}Um[go">
+                                        <field name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="LbGripper.open" id="Nca#^FAx,`iEGuYbmO33">
+                                        <next>
+                                          <block type="procedures_callnoreturn" id="jceOfMZ0Bc3*D!|WVX!@">
+                                            <mutation name="di_lui">
+                                              <arg name="kc_lui"></arg>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block type="math_number" id="OFQYMTwIEku!oO|c3Tfk">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="OYzoKC[@A1?K@auAdglM" x="-2038" y="-2263">
+    <field name="NAME">cap trung hoa xanh bien</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="procedures_callnoreturn" id="7V!tJSig12yw5Vysk(BC">
+        <mutation name="re_trai">
+          <arg name="goc"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_number" id="nf?.I-xRRRwx!ok|v,)N">
+            <field name="NUM">135</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="bP:Oy`Ic_]]$MxN7n8f7">
+            <mutation name="do_line">
+              <arg name="kc_line"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="S/.KZlSErw4:w7+jS_jI">
+                <field name="NUM">600</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="uaJ8~*12j5)D!j?Mx^BZ">
+                <mutation name="re_phai">
+                  <arg name="goc"></arg>
+                </mutation>
+                <value name="ARG0">
+                  <block type="math_number" id="ROZPC5jXqNJ0Eio[w:,k">
+                    <field name="NUM">45</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="procedures_callnoreturn" id="wp,M.jNUh=U?HTW-C!WT">
+                    <mutation name="di_thang">
+                      <arg name="kc_thang"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="math_number" id="Kihu0[|siyeQc|iv2J7y">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="LbGripper.moveTo" id="vR7pI~iDy]_$`r.Srm}$">
+                        <field name="UnitDegree">degrees</field>
+                        <value name="angleDeg">
+                          <shadow type="math_number" id="ny9{e8J1._3RI*P?QtK=">
+                            <field name="NUM">60</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="procedures_callnoreturn" id="u|z_!5vVfRRv`]Mwcy36">
+                            <mutation name="di_lui">
+                              <arg name="kc_lui"></arg>
+                            </mutation>
+                            <value name="ARG0">
+                              <block type="math_number" id="n;kxb7fo=3gP]Grc)YQ+">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="procedures_callnoreturn" id=":_!7IcwB9,iYxh=oi~0S">
+                                <mutation name="re_trai">
+                                  <arg name="goc"></arg>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block type="math_number" id="ON6T83cj!nD?*FT(?geP">
+                                    <field name="NUM">135</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="W1NB~0I.|]`#?:8PL]F/">
+                                    <mutation name="do_line">
+                                      <arg name="kc_line"></arg>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block type="math_number" id="bF(a1!:4J+d1wB+[qS}G">
+                                        <field name="NUM">600</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="*!28jE^T^wGMRQ,UT+_g">
+                                        <mutation name="re_trai">
+                                          <arg name="goc"></arg>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block type="math_number" id="e~$elvsAjz+}l^S2`M]N">
+                                            <field name="NUM">85</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="procedures_callnoreturn" id="0k~A!f3psm2?+Uxv`o*n">
+                                            <mutation name="do_line">
+                                              <arg name="kc_line"></arg>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block type="math_number" id="uerD-L(:#[0%DR6r9a?x">
+                                                <field name="NUM">900</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="procedures_callnoreturn" id="}[[ew/yjT4iMAct/PbY.">
+                                                <mutation name="re_trai">
+                                                  <arg name="goc"></arg>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block type="math_number" id="gaOAVs3D{)3*2FRRL*`L">
+                                                    <field name="NUM">135</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="procedures_callnoreturn" id="@ShRBobCa)#!tX;=0/1X">
+                                                    <mutation name="di_thang">
+                                                      <arg name="kc_thang"></arg>
+                                                    </mutation>
+                                                    <value name="ARG0">
+                                                      <block type="math_number" id="^S/]3!4w~,:}?nd/mZ)`">
+                                                        <field name="NUM">10</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="LbGripper.open" id="]JD4Ki}-w8_=AQ;4=_04">
+                                                        <next>
+                                                          <block type="procedures_callnoreturn" id="ZGm{_HVU0!sNyH|HP{yG">
+                                                            <mutation name="di_lui">
+                                                              <arg name="kc_lui"></arg>
+                                                            </mutation>
+                                                            <value name="ARG0">
+                                                              <block type="math_number" id="-q;e:fOi0M9.XF06HRW2">
+                                                                <field name="NUM">10</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="procedures_callnoreturn" id="h(^,U!wj_;qbd~h3~MP{">
+                                                                <mutation name="re_trai">
+                                                                  <arg name="goc"></arg>
+                                                                </mutation>
+                                                                <value name="ARG0">
+                                                                  <block type="math_number" id="B7bdxt7ZqJHmaj8y-wR0">
+                                                                    <field name="NUM">45</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="NU6WWPJgCs/yt@mF??ii" x="-2863" y="-2138">
+    <field name="NAME">runFollowLine</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="LbIRLine.read" id="gT|$LH$[8:`?`LRb[Avq">
+        <next>
+          <block type="vars_set_int" id="Jwo=SFsG?+uR9klyH0+d">
+            <field name="VAR_SET_INT" id="sUbI(3tTJ#b[/h.bmz.A" variabletype="int">line</field>
+            <value name="VALUE">
+              <block type="LbIRLine.value" id="S$](%lU%Clte@-AuidQy"></block>
+            </value>
+            <next>
+              <block type="LbIRLine.displayOnRGB" id="r]~!u]~t+N^9vo@@Fch7">
+                <value name="RGBColor">
+                  <shadow type="LbRGB.colour_picker" id="/|1x.sQ=OPcM^T7ur{z!">
+                    <field name="Color">#00ff00</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="controls_switch" id="Xv,$QrkY/tUUMG_%=z?A">
+                    <mutation xmlns="http://www.w3.org/1999/xhtml" casebreak="12" default="1"></mutation>
+                    <field name="SWVAR" id="sUbI(3tTJ#b[/h.bmz.A" variabletype="int">line</field>
+                    <value name="CASE0">
+                      <block type="LbIRLine.state" id="0[A4)Dz%@|5vSLA;LZTU">
+                        <field name="state0"></field>
+                        <field name="state1">#000000</field>
+                        <field name="state2"></field>
+                        <field name="state3"></field>
+                      </block>
+                    </value>
+                    <value name="CASE1">
+                      <block type="LbIRLine.state" id="^^%D{Bj]?)kz#r]nbIn_">
+                        <field name="state0">#000000</field>
+                        <field name="state1">#000000</field>
+                        <field name="state2">#000000</field>
+                        <field name="state3"></field>
+                      </block>
+                    </value>
+                    <value name="CASE2">
+                      <block type="LbIRLine.state" id="wH94`)kvI94fX.T88Jc+">
+                        <field name="state0">#000000</field>
+                        <field name="state1">#000000</field>
+                        <field name="state2"></field>
+                        <field name="state3"></field>
+                      </block>
+                    </value>
+                    <value name="CASE3">
+                      <block type="LbIRLine.state" id="URKQnvb(FXENNK]7m.p%">
+                        <field name="state0">#000000</field>
+                        <field name="state1"></field>
+                        <field name="state2"></field>
+                        <field name="state3"></field>
+                      </block>
+                    </value>
+                    <statement name="DO3">
+                      <block type="LbMotion.run" id="C(O:7Xeuq:S5Nu1sSC^W">
+                        <field name="MotionType">Run</field>
+                        <field name="UnitSpeed">sps</field>
+                        <value name="Left">
+                          <shadow type="math_number" id="8=BSmJbf`.|~=C3Zb?xz">
+                            <field name="NUM">30</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="B-Qduhcc_WrE)zi}G3n!">
+                            <field name="OP">DIVIDE</field>
+                            <value name="A">
+                              <shadow type="math_number" id="V*juRP_qR7B)Y3uGy9YO">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="vars_get_int" id="J/#~[:%1oMO@x_q^OPa!">
+                                <field name="VAR_GET_INT" id="_jvBO.TC45kRzj@{m:^7" variabletype="int">speed</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id=")X=!Wl4vn`1-o?}q.;bW">
+                                <field name="NUM">8</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="Right">
+                          <shadow type="math_number" id="s{Dqz=24J%1oL]YIf}ed">
+                            <field name="NUM">30</field>
+                          </shadow>
+                          <block type="vars_get_int" id="OY7Pp?px6]mqC.3]b__4">
+                            <field name="VAR_GET_INT" id="_jvBO.TC45kRzj@{m:^7" variabletype="int">speed</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="CASE4">
+                      <block type="LbIRLine.state" id="n8D{.*_KXStGa4SdA~T0">
+                        <field name="state0"></field>
+                        <field name="state1">#ffffff</field>
+                        <field name="state2">#000000</field>
+                        <field name="state3">#ffffff</field>
+                      </block>
+                    </value>
+                    <value name="CASE5">
+                      <block type="LbIRLine.state" id="4p-6PG}y6QhH6_H*3Jkw">
+                        <field name="state0"></field>
+                        <field name="state1">#000000</field>
+                        <field name="state2">#000000</field>
+                        <field name="state3">#000000</field>
+                      </block>
+                    </value>
+                    <value name="CASE6">
+                      <block type="LbIRLine.state" id="?j9*Cx9Rr;yj8DF6L-8q">
+                        <field name="state0"></field>
+                        <field name="state1">#ffffff</field>
+                        <field name="state2">#000000</field>
+                        <field name="state3">#000000</field>
+                      </block>
+                    </value>
+                    <value name="CASE7">
+                      <block type="LbIRLine.state" id="Q_,X:[uvSdqs1jP[21zL">
+                        <field name="state0"></field>
+                        <field name="state1">#ffffff</field>
+                        <field name="state2"></field>
+                        <field name="state3">#000000</field>
+                      </block>
+                    </value>
+                    <statement name="DO7">
+                      <block type="LbMotion.run" id="GIc=owIa]7_heS`|Rlm}">
+                        <field name="MotionType">Run</field>
+                        <field name="UnitSpeed">sps</field>
+                        <value name="Left">
+                          <shadow type="math_number" id=":N(5k4sHO=:kXZsBmEv4">
+                            <field name="NUM">30</field>
+                          </shadow>
+                          <block type="vars_get_int" id="ilTISROB,KRR)T]KIPUu">
+                            <field name="VAR_GET_INT" id="_jvBO.TC45kRzj@{m:^7" variabletype="int">speed</field>
+                          </block>
+                        </value>
+                        <value name="Right">
+                          <shadow type="math_number" id="]/7Hol=oCM`fUfN61gJB">
+                            <field name="NUM">30</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="^!u5hy8R%YE}C:h?gIy@">
+                            <field name="OP">DIVIDE</field>
+                            <value name="A">
+                              <shadow type="math_number">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="vars_get_int" id="0jN(2q7}2H)B@PxcyJr^">
+                                <field name="VAR_GET_INT" id="_jvBO.TC45kRzj@{m:^7" variabletype="int">speed</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="m~MVF/i3e3Y3G+Q`$8C$">
+                                <field name="NUM">8</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="CASE8">
+                      <block type="LbIRLine.state" id="*(4Melz?S{Tml?KB!fXr">
+                        <field name="state0">#000000</field>
+                        <field name="state1">#ffffff</field>
+                        <field name="state2">#ffffff</field>
+                        <field name="state3">#000000</field>
+                      </block>
+                    </value>
+                    <value name="CASE9">
+                      <block type="LbIRLine.state" id="!+{QM{-LIY7+Bn.!HQtq">
+                        <field name="state0">#000000</field>
+                        <field name="state1">#000000</field>
+                        <field name="state2">#ffffff</field>
+                        <field name="state3">#000000</field>
+                      </block>
+                    </value>
+                    <value name="CASE10">
+                      <block type="LbIRLine.state" id="Z.z1EdK{*B9p.Nd[#cOV">
+                        <field name="state0">#000000</field>
+                        <field name="state1">#ffffff</field>
+                        <field name="state2">#000000</field>
+                        <field name="state3">#000000</field>
+                      </block>
+                    </value>
+                    <value name="CASE11">
+                      <block type="LbIRLine.state" id="pP@(kQIxqDYL.}E?M?R.">
+                        <field name="state0">#000000</field>
+                        <field name="state1">#ffffff</field>
+                        <field name="state2">#000000</field>
+                        <field name="state3">#ffffff</field>
+                      </block>
+                    </value>
+                    <value name="CASE12">
+                      <block type="LbIRLine.state" id="g18;])gr.@%yT6g*qg_d">
+                        <field name="state0"></field>
+                        <field name="state1">#000000</field>
+                        <field name="state2"></field>
+                        <field name="state3">#000000</field>
+                      </block>
+                    </value>
+                    <statement name="DEFAULT">
+                      <block type="LbMotion.run" id="DZJAKS1sn{i=^k,N%{q=">
+                        <field name="MotionType">Run</field>
+                        <field name="UnitSpeed">sps</field>
+                        <value name="Left">
+                          <shadow type="math_number">
+                            <field name="NUM">30</field>
+                          </shadow>
+                          <block type="vars_get_int" id="yk@GuZb1R.$m]:eMKD|4">
+                            <field name="VAR_GET_INT" id="_jvBO.TC45kRzj@{m:^7" variabletype="int">speed</field>
+                          </block>
+                        </value>
+                        <value name="Right">
+                          <shadow type="math_number" id="hJVRY[=uRDhHxi?lQ|Sy">
+                            <field name="NUM">30</field>
+                          </shadow>
+                          <block type="vars_get_int" id="L;dXJAp$?!Y}~%n8,w/A">
+                            <field name="VAR_GET_INT" id="_jvBO.TC45kRzj@{m:^7" variabletype="int">speed</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="Leanbot.whenStarted" id="Ag,O-W./~[GRVfyF.(ZC" x="-1338" y="-2138">
+    <next>
+      <block type="LbGripper.open" id="UQ,@eLW,Yz+UD={D!UEe">
+        <next>
+          <block type="LbIRLine.doManualCalibration" id="!3@I$}/4EU=!CStLb{%E">
+            <field name="touchX">TB1A</field>
+            <next>
+              <block type="LbMission.beginByTeacher_end" id="Iw)kJdVCmDu2mgrQ:/4;">
+                <field name="comboTouch">TB1A + TB1B</field>
+                <statement name="Body">
+                  <block type="procedures_callnoreturn" id="Ry~^bb.c)He(O%AQ~rb`">
+                    <mutation name="cap trung hoa xanh la"></mutation>
+                    <next>
+                      <block type="procedures_callnoreturn" id="^i]h]kb,yd%zzmp;aQ!9">
+                        <mutation name="khoi vang"></mutation>
+                        <next>
+                          <block type="procedures_callnoreturn" id="27P`fDGC(+%0u:N(B%6n">
+                            <mutation name="cap trung hoa tim"></mutation>
+                            <next>
+                              <block type="procedures_callnoreturn" id="k2zX`U-^%fLk#4cc%bql">
+                                <mutation name="cap trung hoa xanh bien"></mutation>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="=AhtLUKNb9uaceqAbd.Z">
+                                    <mutation name="khoi do + tro ve"></mutation>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_defnoreturn" id="oM1$h7Ipz}8s1m[q9W8f" x="-838" y="-2062">
+    <mutation>
+      <arg name="kc_thang" varid="kf2{+uhF,5~%|j!DJbnU"></arg>
+    </mutation>
+    <field name="NAME">di_thang</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="LbMotion.run" id="L6IA8%y*5m.hAIQ)s;aZ">
+        <field name="MotionType">Run</field>
+        <field name="UnitSpeed">rpm</field>
+        <value name="Left">
+          <shadow type="math_number" id="tC#f,,+EhTW=:Ih9l(E]">
+            <field name="NUM">30</field>
+          </shadow>
+        </value>
+        <value name="Right">
+          <shadow type="math_number" id="7tkZj*(3IWh46-Hd9Ltb">
+            <field name="NUM">30</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="LbMotion.waitDistanceMm" id=":Z,0ruKT^{LqwN$]oVMN">
+            <field name="UnitDistance">cm</field>
+            <value name="distanceMm">
+              <shadow type="math_number" id="R@nDkj:9T5Reym:64s{]">
+                <field name="NUM">0</field>
+              </shadow>
+              <block type="vars_get_int_local" id="9O]`]xR77rORYJd[Ik|C">
+                <field name="VAR_GET_INT" id="kf2{+uhF,5~%|j!DJbnU">kc_thang</field>
+              </block>
+            </value>
+            <next>
+              <block type="LbMotion.stop" id="N5(F(2LPwsjZZFzM@r|6"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="NAN/]V#6[qX*fH7.)+Of" x="-1863" y="-1963">
+    <field name="NAME">followLineCarefully</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="controls_repeat" id="S!Lnz}ZAgp%sU3:bTrtO">
+        <field name="TIMES">10</field>
+        <statement name="DO">
+          <block type="procedures_callnoreturn" id="YFKhCMTj67MAORW)!0?[">
+            <mutation name="runFollowLine"></mutation>
+            <next>
+              <block type="controls_if" id="%d`U/YK`fQ06)2)D^c.)">
+                <value name="IF0">
+                  <block type="LbIRLine.isBlackDetected" id="}`x/nLgznkCZm08qFZq:"></block>
+                </value>
+                <statement name="DO0">
+                  <block type="controls_flow_statements" id="b7vZkEe4CDlFyM?+a=;%">
+                    <field name="FLOW">BREAK</field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="LbMotion.waitDistanceMm" id="zfFH@Q$..hy9J9!CB#p(">
+                    <field name="UnitDistance">mm</field>
+                    <value name="distanceMm">
+                      <shadow type="math_number" id="@SEPF~F{Z$pJo~#$?T]f">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="xW~3Dp5F.XbcfHE4jhpp" x="-1363" y="-1863">
+    <field name="NAME">cap trung hoa xanh la</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="procedures_callnoreturn" id="yet9HBY`O`ZIG:YK]K[P">
+        <mutation name="di_thang">
+          <arg name="kc_thang"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_number" id="d!(_w*p/v-Ik!Mo!{,49">
+            <field name="NUM">15</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="cTUrVj=:3)dl%tv)wIM1">
+            <mutation name="re_phai">
+              <arg name="goc"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="c]Cu~qvV+(aFrOySD3-z">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="3s%i)J6XsEf6pH%6Q|61">
+                <mutation name="do_line">
+                  <arg name="kc_line"></arg>
+                </mutation>
+                <value name="ARG0">
+                  <block type="math_number" id="g%M_S4}H_)G)o@iVrrJa">
+                    <field name="NUM">150</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="LbGripper.moveTo" id="(x!5`5!!eiB1.iDu)+kr">
+                    <field name="UnitDegree">degrees</field>
+                    <value name="angleDeg">
+                      <shadow type="math_number" id=";;;60Zk?r2UhMUw%N*1Z">
+                        <field name="NUM">60</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="dxvt,XDlnN-#K0E7.)G5">
+                        <mutation name="di_lui">
+                          <arg name="kc_lui"></arg>
+                        </mutation>
+                        <value name="ARG0">
+                          <block type="math_number" id="al|^Hc*wJd@[o2B^~49t">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="procedures_callnoreturn" id="K=p(/@49nMpSINvY,$jw">
+                            <mutation name="re_trai">
+                              <arg name="goc"></arg>
+                            </mutation>
+                            <value name="ARG0">
+                              <block type="math_number" id="B~YedHg6@mAjIYVvz@/a">
+                                <field name="NUM">180</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="procedures_callnoreturn" id="yJ_;3`xnX(@p9t6olGp`">
+                                <mutation name="do_line">
+                                  <arg name="kc_line"></arg>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block type="math_number" id="n}X`tpF,v$VVXpmF}X[d">
+                                    <field name="NUM">280</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="J:!Hpct=TxFCR2(vz}I@">
+                                    <mutation name="re_trai">
+                                      <arg name="goc"></arg>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block type="math_number" id="l4d$WPk763i6^ZWPqg~6">
+                                        <field name="NUM">90</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="Vor@RGR|FpHn5{~Suq(=">
+                                        <mutation name="do_line">
+                                          <arg name="kc_line"></arg>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block type="math_number" id="DQms/+mq.)^m*cjn35Sx">
+                                            <field name="NUM">300</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="procedures_callnoreturn" id="ai@^$5Ckl-xYgV`qK@Hp">
+                                            <mutation name="re_phai">
+                                              <arg name="goc"></arg>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block type="math_number" id="eXzo,(!lA2[}H2Zt9hbR">
+                                                <field name="NUM">135</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="procedures_callnoreturn" id="l)jKEG]{A(LrP0_EXpnp">
+                                                <mutation name="di_thang">
+                                                  <arg name="kc_thang"></arg>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block type="math_number" id="DEfM{j$Qtc0RFlFH8R#t">
+                                                    <field name="NUM">10</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="LbGripper.open" id="9xSVVR32jnYBrYqEYlqu">
+                                                    <next>
+                                                      <block type="procedures_callnoreturn" id="j+Q%HP^}PY8g-.7%-OR;">
+                                                        <mutation name="di_lui">
+                                                          <arg name="kc_lui"></arg>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block type="math_number" id="H0=jq(KZ_ZEC{IZ,WD0%">
+                                                            <field name="NUM">10</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="procedures_callnoreturn" id="}]JMHT7BydA@!842(xzz">
+                                                            <mutation name="re_phai">
+                                                              <arg name="goc"></arg>
+                                                            </mutation>
+                                                            <value name="ARG0">
+                                                              <block type="math_number" id="Ps~nB{lIm?L%N3BLx[$C">
+                                                                <field name="NUM">45</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="A0+fw9Sd0bMHk?2[kZc{" x="-788" y="-1837">
+    <mutation>
+      <arg name="kc_lui" varid="Y~vu)4{,u%GBVmm`~%zc"></arg>
+    </mutation>
+    <field name="NAME">di_lui</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="LbMotion.run" id="{;z_teZc$_o)oQ+Ohhk$">
+        <field name="MotionType">Run</field>
+        <field name="UnitSpeed">rpm</field>
+        <value name="Left">
+          <shadow type="math_number" id="V=/@lYYSirM[.gA;*fjV">
+            <field name="NUM">-30</field>
+          </shadow>
+        </value>
+        <value name="Right">
+          <shadow type="math_number" id="G0={$7$W#}h2+[j@QBbl">
+            <field name="NUM">-30</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="LbMotion.waitDistanceMm" id="c.:0hl$W]]+X~q8874Nf">
+            <field name="UnitDistance">cm</field>
+            <value name="distanceMm">
+              <shadow type="math_number" id="ZU,I|_[TrI=s.fA^sYgq">
+                <field name="NUM">4.2</field>
+              </shadow>
+              <block type="vars_get_int_local" id="X!yepZ){kceGqrfk~gQi">
+                <field name="VAR_GET_INT" id="Y~vu)4{,u%GBVmm`~%zc">kc_lui</field>
+              </block>
+            </value>
+            <next>
+              <block type="LbMotion.stop" id="*!NdWuLM(c*5#GEJhn6H"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="oT+wY^s.CExuWz#$C~zA" x="-1812" y="-1738">
+    <field name="NAME">khoi vang</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="procedures_callnoreturn" id="^_~7.Sr_0O$|,aFVKGw1">
+        <mutation name="do_line">
+          <arg name="kc_line"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_number" id="]C;%1cW_[*5uMb3{4n#q">
+            <field name="NUM">300</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="Hzo#hLp(:0asl*u;,bb?">
+            <mutation name="re_phai">
+              <arg name="goc"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="Y8ugY{xOt^bkae?R|Ysv">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="i`m5^I:4pOLl4y~Ka}J)">
+                <mutation name="do_line">
+                  <arg name="kc_line"></arg>
+                </mutation>
+                <value name="ARG0">
+                  <block type="math_number" id="`ZTTSa9c8qV:sT)16L3m">
+                    <field name="NUM">300</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="procedures_callnoreturn" id="o6{dLd0Cc}i(c)d|6r$*">
+                    <mutation name="re_trai">
+                      <arg name="goc"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="math_number" id="}f{^%r:8;V-^4ws==(Zv">
+                        <field name="NUM">135</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="MB$K+pRj%ci16ycT7(|g">
+                        <mutation name="di_thang">
+                          <arg name="kc_thang"></arg>
+                        </mutation>
+                        <value name="ARG0">
+                          <block type="math_number" id="tLDH,JL[#qT-tQ_4e?a*">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="LbGripper.close" id="mzJa5G,fJo=4|OE(gqOS">
+                            <next>
+                              <block type="procedures_callnoreturn" id="J0yS.7c6KnU7K`JJ$t+s">
+                                <mutation name="di_lui">
+                                  <arg name="kc_lui"></arg>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block type="math_number" id="E3p%y/k_D4n9~D(P*StC">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="Tc*fGqxz[x7v.Y7fijD6">
+                                    <mutation name="re_trai">
+                                      <arg name="goc"></arg>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block type="math_number" id="k+Ce}Q?Okj!Dz-kDcM=$">
+                                        <field name="NUM">90</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="zYe_hj?!7qTK]gs-3q_A">
+                                        <mutation name="di_thang">
+                                          <arg name="kc_thang"></arg>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block type="math_number" id="8Ej,RWs{d-Qb/_wtWHkS">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="LbGripper.open" id="n.u.N)L(g}hzshc=0VZt">
+                                            <next>
+                                              <block type="procedures_callnoreturn" id="4uvccT^U/Gx7`S[=iILt">
+                                                <mutation name="di_lui">
+                                                  <arg name="kc_lui"></arg>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block type="math_number" id="Z6V9;fS+#`b{-Bak^J*6">
+                                                    <field name="NUM">10</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="*@#Wf/}PB%0!S*pL,.._" x="-838" y="-1638">
+    <mutation>
+      <arg name="goc" varid="J.|Usr~Qs+tV3/s,o|fm"></arg>
+    </mutation>
+    <field name="NAME">re_phai</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="LbMotion.run" id="d1w25sop9^l$/`n9fWO_">
+        <field name="MotionType">Run</field>
+        <field name="UnitSpeed">rpm</field>
+        <value name="Left">
+          <shadow type="math_number" id="3Jk/IG5:j^(iXpB_Eqad">
+            <field name="NUM">30</field>
+          </shadow>
+        </value>
+        <value name="Right">
+          <shadow type="math_number" id="rEh!{f`g]8aYC0-z8!h0">
+            <field name="NUM">-30</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="LbMotion.waitRotationDeg" id="Q0[g%+dX`x!h#33CsaFY">
+            <field name="UnitDegree">degrees</field>
+            <value name="rotationDeg">
+              <shadow type="math_number" id="Z:3(9.MK:Bhi4jWs*2qu">
+                <field name="NUM">90</field>
+              </shadow>
+              <block type="vars_get_int_local" id="v+b[`mh()Q3c2W:V]|g.">
+                <field name="VAR_GET_INT" id="J.|Usr~Qs+tV3/s,o|fm">goc</field>
+              </block>
+            </value>
+            <next>
+              <block type="LbMotion.stop" id="z;UQ}m1^I6#eP1sDcXsk"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="s@`}=]oauPf|$3V?J^VD" x="-1588" y="-1512">
+    <field name="NAME">khoi do + tro ve</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="procedures_callnoreturn" id="L)~-e2`EstJ#g7Vsxf.-">
+        <mutation name="do_line">
+          <arg name="kc_line"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_number" id="-+eP{n@!/G%T43{@Fy=3">
+            <field name="NUM">300</field>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="c:~o}o:nnXrOeozf7(#C">
+            <mutation name="re_phai">
+              <arg name="goc"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="=A;m^Y+c]1jhUI4B/F7|">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="ZW|-%B@/#;BXmLVn]m(P">
+                <mutation name="do_line">
+                  <arg name="kc_line"></arg>
+                </mutation>
+                <value name="ARG0">
+                  <block type="math_number" id="6-12WIwK+u=77?V`jd2{">
+                    <field name="NUM">300</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="procedures_callnoreturn" id="0vKVhY72E0xdQrRVo+Mp">
+                    <mutation name="re_trai">
+                      <arg name="goc"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="math_number" id="hLb;@]jzSdmKN||yWwdc">
+                        <field name="NUM">135</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="yLH%}w@knIt~*@V}buU[">
+                        <mutation name="di_thang">
+                          <arg name="kc_thang"></arg>
+                        </mutation>
+                        <value name="ARG0">
+                          <block type="math_number" id="z6p|CykdqVe!lobO(sIa">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="LbGripper.close" id="IEBYk(xDrLdxIcOv6]8l">
+                            <next>
+                              <block type="procedures_callnoreturn" id="[(z=q0|H$+S;s%)9,Cxy">
+                                <mutation name="di_lui">
+                                  <arg name="kc_lui"></arg>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block type="math_number" id="E[lnp[R+d%{Qq+F+u1rK">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="procedures_callnoreturn" id="dw1x,K:k,!$7dwT/2!BV">
+                                    <mutation name="re_phai">
+                                      <arg name="goc"></arg>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block type="math_number" id="ku)]g@~9(JEf0Rm9?%[X">
+                                        <field name="NUM">135</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="procedures_callnoreturn" id="/oZ]IqpK8P|wS,Hz3)Z$">
+                                        <mutation name="do_line">
+                                          <arg name="kc_line"></arg>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block type="math_number" id="Nm{Nl2mZSS|u8ncvJ;Dw">
+                                            <field name="NUM">300</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="procedures_callnoreturn" id="PkM$Tt5l~!;1v03n.jx3">
+                                            <mutation name="re_trai">
+                                              <arg name="goc"></arg>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block type="math_number" id="[SAzE!}M1K}ACxL3AMt[">
+                                                <field name="NUM">90</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="procedures_callnoreturn" id="A/8#)5~W.?ZOabI08?qW">
+                                                <mutation name="do_line">
+                                                  <arg name="kc_line"></arg>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block type="math_number" id="FNr!xnU%@]!o_i+~1]IL">
+                                                    <field name="NUM">450</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="procedures_callnoreturn" id="Y8c[`=O%M!(tohb|kino">
+                                                    <mutation name="re_phai">
+                                                      <arg name="goc"></arg>
+                                                    </mutation>
+                                                    <value name="ARG0">
+                                                      <block type="math_number" id="w1iu]V.TA}A@1x$:?XI;">
+                                                        <field name="NUM">90</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="procedures_callnoreturn" id=":VuC!ruW[ecOG8^^.3IB">
+                                                        <mutation name="di_thang">
+                                                          <arg name="kc_thang"></arg>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block type="math_number" id="vET_RNayx%or2ZN%_16N">
+                                                            <field name="NUM">20</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="LbGripper.open" id="eLE]iW)%:3vEhiXk~RmV">
+                                                            <next>
+                                                              <block type="procedures_callnoreturn" id="ucU!F8Ov091FSD7g9m?m">
+                                                                <mutation name="di_lui">
+                                                                  <arg name="kc_lui"></arg>
+                                                                </mutation>
+                                                                <value name="ARG0">
+                                                                  <block type="math_number" id="%u]~q#U8-zGy$-{b(_b5">
+                                                                    <field name="NUM">10</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="i62#Ap%asY2@,6+ZB0/g" x="-1063" y="-1487">
+    <mutation>
+      <arg name="goc" varid="J.|Usr~Qs+tV3/s,o|fm"></arg>
+    </mutation>
+    <field name="NAME">re_trai</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="LbMotion.run" id="ns6%{X4)Nwv?13-pLpVf">
+        <field name="MotionType">Run</field>
+        <field name="UnitSpeed">rpm</field>
+        <value name="Left">
+          <shadow type="math_number" id="z)Pm+EKSwv_]Wf4)[w8-">
+            <field name="NUM">-30</field>
+          </shadow>
+        </value>
+        <value name="Right">
+          <shadow type="math_number" id="1$x,3cr(ba$=*/C8i/1Z">
+            <field name="NUM">30</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="LbMotion.waitRotationDeg" id="d-YcC$L_xl##ixc#{I1j">
+            <field name="UnitDegree">degrees</field>
+            <value name="rotationDeg">
+              <shadow type="math_number" id="rzW=s9[u^DEX;HsSCdUF">
+                <field name="NUM">90</field>
+              </shadow>
+              <block type="vars_get_int_local" id="i0o#X4AX0^!$4`?qos9%">
+                <field name="VAR_GET_INT" id="J.|Usr~Qs+tV3/s,o|fm">goc</field>
+              </block>
+            </value>
+            <next>
+              <block type="LbMotion.stop" id="2=Pxvl-EU}?#V,vUYRmU"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="pZ#Z-Xa;SK+=+S{YQkAe" x="-2213" y="-1212">
+    <field name="NAME">followLine</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="vars_set_int" id="-y+h@o-us]Kh7b.is4.x">
+        <field name="VAR_SET_INT" id="RfFr-tczsS#@?*CFB~,o" variabletype="int">target</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="N$I2$OJLJuE1EZf]~qW)">
+            <field name="OP">ADD</field>
+            <value name="A">
+              <shadow type="math_number" id="Kgu@f[8:D$)BjU.R^N2O">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="LbMotion.approxDistance" id="tG#W`:NP*M^7[b`3Hw6G">
+                <field name="UnitDistance">mm</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="gDf4X{IN@_Gu3L$st.}I">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="vars_get_int" id="L^KVyHZ7;QCGqk|aJo@T">
+                <field name="VAR_GET_INT" id="P#q{d%c`=B0*0FA2k)s9" variabletype="int">distance</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="procedures_callnoreturn" id="GV,v|8wL-MCpXk~0n~4:">
+            <mutation name="followLineCarefully"></mutation>
+            <next>
+              <block type="controls_whileUntil" id=":zg!7en/2)=wV,hopRnC">
+                <field name="MODE">WHILE</field>
+                <value name="BOOL">
+                  <block type="LbIRLine.isBlackDetected" id="SlU|bi;#8du{U9Zi7Fn5"></block>
+                </value>
+                <statement name="DO">
+                  <block type="procedures_callnoreturn" id="qW%f*8+8kd1AWeq3_c1`">
+                    <mutation name="followLineCarefully"></mutation>
+                    <next>
+                      <block type="controls_if" id="``0c(EfL4w5ZQx``%ui`">
+                        <value name="IF0">
+                          <block type="logic_compare" id="=M6)w4a=@A=nmYr8{Uj4">
+                            <field name="OP">GT</field>
+                            <value name="A">
+                              <block type="LbMotion.approxDistance" id="cZh.w@FOPEPJmO$/9=ns">
+                                <field name="UnitDistance">mm</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="vars_get_int" id="+U`bw8x~8(!AVD$i^S6Q">
+                                <field name="VAR_GET_INT" id="RfFr-tczsS#@?*CFB~,o" variabletype="int">target</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="controls_if" id="3np$`s#Y1%ZZ1jY{b/-o">
+                            <value name="IF0">
+                              <block type="logic_compare" id="`x/}g8esN}(jCWO6`E7!">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="LbIRLine.value" id=",/aBI0nc##+i#9dVHUP$"></block>
+                                </value>
+                                <value name="B">
+                                  <block type="LbIRLine.state" id="^C%bu%]8oS+;Y07ohSxc">
+                                    <field name="state0"></field>
+                                    <field name="state1">#000000</field>
+                                    <field name="state2">#000000</field>
+                                    <field name="state3"></field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="controls_flow_statements" id="Q%ViL5knDz6}tTA;av!+">
+                                <field name="FLOW">BREAK</field>
+                              </block>
+                            </statement>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="LbMotion.waitDistanceMm" id=";PQv}:fjl)9i3X@CH!Ay">
+                            <field name="UnitDistance">mm</field>
+                            <value name="distanceMm">
+                              <shadow type="math_number" id="u[Y[jx^/$SbgXp`3@#](">
+                                <field name="NUM">1</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="]8G.vAZQr;M+7xKBbj3," x="-862" y="-1212">
+    <mutation>
+      <arg name="kc_line" varid="y/S2]W(DS4ONKlI/#w`5"></arg>
+    </mutation>
+    <field name="NAME">do_line</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="vars_set_int" id=":y*fz9m2B)xK$ADAr)?f">
+        <field name="VAR_SET_INT" id="_jvBO.TC45kRzj@{m:^7" variabletype="int">speed</field>
+        <value name="VALUE">
+          <block type="math_number" id="L*n+)6os4uQSkGb80:vG">
+            <field name="NUM">1500</field>
+          </block>
+        </value>
+        <next>
+          <block type="vars_set_int" id="rF:3eoOWeZFSwu%MR*EP">
+            <field name="VAR_SET_INT" id="P#q{d%c`=B0*0FA2k)s9" variabletype="int">distance</field>
+            <value name="VALUE">
+              <block type="vars_get_int_local" id="J^T112kHsO26kkJBgomu">
+                <field name="VAR_GET_INT" id="y/S2]W(DS4ONKlI/#w`5">kc_line</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="#|Wurw?6SXGwR$/:P{9e">
+                <mutation name="followLine"></mutation>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
